@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 2rem;
+    background: #ff6347;
+    color: #fff;
+    width: 100%;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Animation */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Tips Section */
+  .tips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .tip-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .tip-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tip-card h2 {
+    font-size: 1.5rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.8s ease-in;
+  }
+  
+  .tip-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .tips {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
